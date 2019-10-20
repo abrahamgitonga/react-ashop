@@ -3,21 +3,21 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
-import ProductList from "./components/ProductList";
-import Details from "Cart./components/Details";
 import Cart from "./components/Cart";
+import Details from "./components/Details";
 import Default from "./components/Default";
-
+import ProductList from "./components/ProductList";
 class App extends Component {
+  state = {};
   render() {
     return (
       <React.Fragment>
         <Navbar />
         <Switch>
-          <Route exact path="/" Component={ProductList} />
-          <Route path="/details" Component={Details} />
-          <Route path="/cart" Component={Cart} />
-          <Route Component={Default} />
+          <Route exact path="/" component={ProductList} />
+          <Route path="/details/" component={Details} />
+          <Route path="/cart" component={Cart} />
+          <Route component={Default} />
         </Switch>
       </React.Fragment>
     );

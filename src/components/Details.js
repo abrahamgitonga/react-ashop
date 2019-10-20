@@ -5,7 +5,7 @@ class Details extends Component {
   render() {
     return (
       <div>
-        <h3>Hello from details</h3>
+        <h1>Hello from Details</h1>
       </div>
     );
   }

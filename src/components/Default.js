@@ -5,7 +5,7 @@ class Default extends Component {
   render() {
     return (
       <div>
-        <h3>Page not found</h3>
+        <h1> page not found</h1>
       </div>
     );
   }
