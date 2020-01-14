@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import Product from "./Product";
 import Title from "./Title";
-import { ProductConsumer } from "../Context";
-
+import { ProductConsumer } from "../context";
 class ProductList extends Component {
   render() {
     return (
       <React.Fragment>
         <div className="py-5">
           <div className="container">
-            <Title name="our" title="products" />
+            <Title name="our" title="product" />
             <div className="row">
               <ProductConsumer>
                 {value => {

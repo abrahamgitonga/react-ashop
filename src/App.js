@@ -3,10 +3,11 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
-import Cart from "./components/Cart";
+import Cart from "./components/cart";
 import Details from "./components/Details";
 import Default from "./components/Default";
 import ProductList from "./components/ProductList";
+import Modal from "./components/Modal";
 class App extends Component {
   state = {};
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
           <Route path="/cart" component={Cart} />
           <Route component={Default} />
         </Switch>
+        <Modal />
       </React.Fragment>
     );
   }
